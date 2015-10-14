@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,14 +7,10 @@
   </head>
   <body>
     <div id="page-wrapper">
-
-      <header id="masthead">
-        <img width="102" height="60" src="Skittles.gif" alt="skittles">
-
-          <h1>IQBDA</h1>
-
-        <h2>The International QBASIC Developers
-          Association</h2>
+      <header id="page-header">
+        <img width="102" height="60" src="Skittles.gif" alt="logo">
+        <h1>IQBDA</h1>
+        <h2>The International QBASIC Developers Association</h2>
       </header>
 
       <nav id="navbar">
@@ -27,31 +23,44 @@
           </li>
           <li>
             <a href="member.html">Become a Member</a>
-
+          </li>
         </ul>
       </nav>
+      <div id="content">
+        <header id="page-title"><h1>Join IQBDA Today!</h1></header>
+        <form action="http://is-dsb.fairfield.edu/is135/iqbda-signup.php" method="post">
+          <label for="name-field">Name</label>
+          <input id="name-field" type="text" name="name">
 
-      <main class="content">
-        <h1>Join IQBDA Today!</h1>
-        <form action="mailto:jake.knostman@gmail.com" method="post">
-          <label for="Name">Name</label><input type="text" name="name" id="Name"><br>
-          <label for="Password">Password</label><input type="password" name="pass" id="Password"><br>
-          <label for="Password(again)">Password (again)</label><input type="password" name="pass2" id="Password(again)"><br>
-          <label for="Email">Email</label><input type="email" name="email" id="Email"><br>
-          <label for="Photo">Photo</label><input type="file" name="photo" id="Photo"><br>
-          <label for="address">Mailing Address</label><textarea name="address" rows="3" cols="30" id="address"></textarea><br>
-          Do you plan to attend IQBDC '98?
-              <label for="iqbdc98"><input type="radio" name="iqbdc98" id="iqbdc98" value="Yes">Yes</label>
-              <label for="iqbdc98"><input type="radio" name="iqbdc98" id="iqbdc98" value="No">No</label><br>
-              <label for="channel">How did you hear about us?<select name="channel" size="1" id="channel" mulitple>How did you hear about us?</label>
-                <option>Superbowl Ad</option>
-                <option>News Article</option>
-                <option>Email</option>
-                <option>Flyoverat the beach</option>
-              </select><br>
+          <label for="pass-field">Password</label>
+          <input id="pass-field" type="password" name="pass">
+
+          <label for="pass2-field">Password (again)</label>
+          <input id="pass2-field" type="password" name="pass2">
+
+          <label for="email-field">Email</label>
+          <input id="email-field"type="email" name="email">
+
+          <label for="photo-field">Photo</label>
+          <input id="photo-field" type="file" name="photo">
+
+          <label for="address-field">Mailing Address</label>
+          <textarea id="address-field" name="address"></textarea>
+
+          <label>Do you plan to attend IQBDC ‘98?</label>
+          <input type="radio" name="iqbdc98" value="Y" id="iqbdc98-Y"><label for="iqbdc98-Y">Yes</label>
+          <input type="radio" name="iqbdc98" value="N" id="iqbdc98-N"><label for="iqbdc98-N">No</label>
+
+          <label for="channel-field">How did you hear about us?</label>
+          <select id="channel-field" name="channel">
+            <option value="superbowl">Superbowl Ad</option>
+            <option value="news">News Article</option>
+            <option value="email">Email</option>
+            <option value="flyover">Flyover at the Beach</option>
+          </select>
           <input type="submit">
         </form>
-      </main>
+      </div>
     </div>
   </body>
 </html>
